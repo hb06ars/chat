@@ -22,18 +22,18 @@ function iniciando(){
 		if('${tipoMensagem}' == 'erro'){
 			mensagemErro('Erro','${mensagem}');
 		} else{
-			mensagem('Atenção','${mensagem}');
+			mensagem('Atenï¿½ï¿½o','${mensagem}');
 		}
 	}
 
     var data = new Date(),
         dia  = data.getDate().toString(),
         diaF = (dia.length == 1) ? '0'+dia : dia,
-        mes  = (data.getMonth()+1).toString(), //+1 pois no getMonth Janeiro começa com zero.
+        mes  = (data.getMonth()+1).toString(), //+1 pois no getMonth Janeiro comeï¿½a com zero.
         mesF = (mes.length == 1) ? '0'+mes : mes,
         anoF = data.getFullYear(),
     	valor = diaF+"/"+mesF+"/"+anoF;
-	    var semana = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
+	    var semana = ["Domingo", "Segunda-Feira", "Terï¿½a-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sï¿½bado"];
 		var dataVal = valor;
 		var arr = dataVal.split("/").reverse();
 		var teste = new Date(arr[0], arr[1] - 1, arr[2]);
